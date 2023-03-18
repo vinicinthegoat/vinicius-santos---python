@@ -1,0 +1,16 @@
+num = [[], []]
+valor = (0)
+for c in range(1, 6):
+    valor = (input(f'Digite o {c}o. valor:'))
+    if  valor % 2 == 0:
+        num[0].append(valor)
+    else:
+        num[1].append(valor)
+num[0].sort()
+num[1].sort()
+soma = num[0] + num[1]
+quant = 5
+media = soma / quant
+print(f'Os valores ímpares digitados foram: {num[0]}')
+print(f'Os valores pares digitados foram: {num[1]}')
+print('Você digitou {} números e a média foi {}'.format(quant, media))
